@@ -1,5 +1,7 @@
-body{
+body {
     background-color: #EDEDED;
+    color: #292828;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
 
 .bg-footer-promo {
