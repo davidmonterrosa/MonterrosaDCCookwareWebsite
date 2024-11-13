@@ -4,6 +4,48 @@ body {
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
 
+h1 {
+    font-weight: bold;
+    font-size: 60px;
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 36px;
+}
+
+h3 {
+    font-weight: bold;
+    font-size: 40px;
+}
+
+h4 {
+    font-weight: normal;
+    font-size: 48px;
+}
+
+h5 {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+/* Start Cooking - Start */
+.start-cooking {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+}
+
+.flex-cards {
+    width:25%;
+}
+
+.image-crop {
+    object-fit: contain;
+}
+/* Start Cooking - End */
+
+
 .bg-footer-promo {
     background-color: #1E2C20;
 }
