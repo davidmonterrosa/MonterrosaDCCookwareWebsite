@@ -6,46 +6,89 @@ body {
 
 h1 {
     font-weight: bold;
-    font-size: 60px;
+    font-size: 3.75em;
 }
 
 h2 {
     font-weight: 600;
-    font-size: 36px;
+    font-size: 2.25em;
 }
 
 h3 {
     font-weight: bold;
-    font-size: 40px;
+    font-size: 2.5em;
 }
 
 h4 {
     font-weight: normal;
-    font-size: 48px;
+    font-size: 3em;
 }
 
 h5 {
     font-weight: 600;
-    font-size: 20px;
+    font-size: 1.25em;
 }
+
+/* Hero Image - Start */
+.hero-container {
+    width: 100%;
+    position: relative;
+}
+
+.hero-image {
+    margin-top: 56px;
+    width: 100%;
+    height: 80%;
+}
+
+.hero-banner-text {
+    background-color: #181818CC;
+    color: #FFFFFF;
+    width: fit-content;
+    padding: 34px 32px;
+    position: absolute;
+    top: 70%;
+    left: 5%;
+
+}
+/* Hero Image - End */
 
 /* Start Cooking - Start */
 .start-cooking {
-    display: flex;
-    flex-direction: column;
-    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(174px, 379px));
+    gap: 15px;
+    width: 100%;
 }
 
-.flex-cards {
-    width:25%;
+.start-cooking-title {
+    grid-row: 1;
+}
+
+.grid-items {
+    grid-row: 2;
+    
 }
 
 .image-crop {
-    object-fit: contain;
+    width: 100%;
+    apect-ratio: 379 / 402;
+    object-fit: cover;
 }
 /* Start Cooking - End */
 
+/* New Arrivals - Start */
+/* New Arrivals - End */
 
+/* Best Sellers - Start */
+/* Best Sellers - End */
+
+/* Reviews - Start */
+/* Reviews - End */
+
+/* Footer - Start */
 .bg-footer-promo {
     background-color: #1E2C20;
 }
+/* Footer - End */
+
