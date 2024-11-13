@@ -72,7 +72,7 @@ h5 {
 
 .image-crop {
     width: 100%;
-    apect-ratio: 379 / 402;
+    aspect-ratio: 379 / 402;
     object-fit: cover;
 }
 /* Start Cooking - End */
