@@ -6,16 +6,21 @@ body {
 
 /* Navbar - Start */
 .logo-size {
-    max-width: 30%;
-    margin-left: 50%;
-    object-fit: contain;
+    width: 32%;
+    @media (max-width: 1200px) {
+        width: 40px;
+        aspect-ratio: 40 / 33.5;
+        object-fit: cover;
+    }
 }
 
 .nav-bar-text {
+    font-size: 1.5em;
     color: #3F3C3C !important;
 }
 
 .sale-text {
+    font-size: 1.5em;
     color: #B73A2A !important;
 }
 
@@ -42,11 +47,12 @@ body {
 
 .hero-image {
     width: 100%;
+    aspect-ratio: 500 / 330;
     @media (max-width: 1200px) {
         margin-top: 56px;
         object-fit: cover;
         object-position: 38% 100%;
-        height:335px;
+        min-height: 332px;
     }
 }
 
@@ -59,7 +65,7 @@ body {
     width: fit-content;
     padding: 34px 32px;
     position: absolute;
-    top: 69%;
+    top: 67.5%;
     left: 6%;
     @media (max-width:1200px) {
         font-size: 1.25em;
