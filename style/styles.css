@@ -4,6 +4,11 @@ body {
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
 
+.section-title {
+    font-size: 4em;
+    font-weight: bold;
+}
+
 /* Navbar - Start */
 .logo-size {
     width: 32%;
@@ -122,6 +127,7 @@ body {
 
 .caption-style {
     font-size: 2.25em;
+    font-weight: 600;
 
 }
 /* Start Cooking - End */
