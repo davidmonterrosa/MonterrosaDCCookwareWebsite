@@ -1,8 +1,38 @@
 body {
     background-color: #EDEDED;
-    color: #292828;
+    color: #292828; 
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
+
+/* Navbar - Start */
+.logo-size {
+    max-width: 30%;
+    margin-left: 50%;
+    object-fit: contain;
+}
+
+.nav-bar-text {
+    color: #3F3C3C !important;
+}
+
+.sale-text {
+    color: #B73A2A !important;
+}
+
+.sale-text:hover {
+    color: #D76151 !important;
+    text-decoration: underline;
+}
+
+.nav-bar-text:hover {
+    color: #982A1C !important;
+    text-decoration: underline;
+}
+
+.bg-nav {
+    background-color: #EDEDED;
+}
+/* Navbar - End */
 
 /* Hero Image - Start */
 .hero-container {
@@ -11,20 +41,31 @@ body {
 }
 
 .hero-image {
-    margin-top: 56px;
     width: 100%;
-    height: 80%;
 }
 
 .hero-banner-text {
     background-color: #181818CC;
     color: #FFFFFF;
+    font-family: 'Roboto';
+    font-weight: normal;
+    font-size: 3em;
     width: fit-content;
     padding: 34px 32px;
     position: absolute;
-    top: 70%;
-    left: 5%;
+    top: 69%;
+    left: 6%;
+}
 
+.promo-text {
+    text-align: center;
+    font-size: 1.5em;
+    color: #FFFFFF;
+    width: 100%;
+    padding: 2rem 0rem;
+    margin: 0;
+    position: absolute;
+    bottom: 0;
 }
 /* Hero Image - End */
 
@@ -34,18 +75,19 @@ body {
 }
 
 .start-cooking-title {
+    margin-top: 5rem;
     text-align: center;
+
 }
 
 .start-cooking-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(174px, 379px));
+    grid-template-columns: repeat(auto-fit, minmax(174px, 1fr));
     gap: 15px;
     width: 100%;
 }
 
 .start-cooking-cards {
-    grid-row: 2;  
 }
 
 .image-crop {
