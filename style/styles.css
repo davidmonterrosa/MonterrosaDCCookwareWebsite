@@ -235,23 +235,32 @@ body {
     padding: 5rem 7rem 3rem;
     display: flex;
     justify-content: space-between;
+
+    @media (max-width:1200px) {
+        flex-direction: column;
+        padding: 3rem 1rem;        
+    }
 }
 
 .footer-links {
     display: flex;
-
+    gap: 2rem 6rem;
+    
     @media (max-width: 1200px) {
-        
+        order: 1;
+        flex-wrap: wrap;
     }
 }
 
 .stay-connnected {
     max-width: 410px;
-    /* flex-direction: column; */
+
+    @media (max-width:1200px) {
+        margin-bottom: 2rem;
+    }
 }
 
 .link-section {
-    margin-right: 6rem;
     flex-direction: column;
     flex-shrink: 0;
 }
