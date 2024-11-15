@@ -16,5 +16,5 @@
 + mm/dd/yyyy - DM - short description
 - 11/12/2024 - DM - Created git repository.
 
-Peer Reviewed By: FirstName LastName
-> Comments: comment
+Peer Reviewed By: Andrew Sayasing
+> Comments: Looks great, nearly pixel perfect. Code is clean and readable. Responsiveness works all the way through. Only problem is the Social Media Icons are missing from the footer but simple fix probably!
