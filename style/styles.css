@@ -5,7 +5,7 @@ body {
 }
 
 .section-title {
-    margin-top: 5rem;
+    margin: 7rem 0 2rem;
     text-align: center;
     font-size: 4em;
     font-weight: bold;
@@ -156,7 +156,6 @@ body {
     width: 9.938rem;
     height: 2.625rem;
     border: 1px solid #292828;
-    border-radius: 10px;
 }
 
 .shop-now-btn:hover {
@@ -230,6 +229,63 @@ body {
 /* Footer - Start */
 .bg-footer-promo {
     background-color: #1E2C20;
+}
+
+.footer-row {
+    padding: 5rem 7rem 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-links {
+    display: flex;
+
+    @media (max-width: 1200px) {
+        
+    }
+}
+
+.stay-connnected {
+    max-width: 410px;
+    /* flex-direction: column; */
+}
+
+.link-section {
+    margin-right: 6rem;
+    flex-direction: column;
+    flex-shrink: 0;
+}
+
+.link-section > p {
+    font-weight: 100;
+}
+
+.links-title {
+    font-size: 1.25em;
+    font-weight: 600;
+}
+
+.footer-text {
+    color: #FFFFFF;
+}
+
+.email-submission {
+    display: flex;
+}
+
+.email-form {
+    padding-right: 5rem;
+    background-color: #E5E7EB;
+    margin-bottom: 1rem;
+}
+
+.subscribe-btn {
+    margin-bottom: 1rem;
+    color: #FFFFFF;
+    background-color: transparent;
+    width: 9.938rem;
+    height: 2.625rem;
+    border: 1px solid #FFFFFF;
 }
 /* Footer - End */
 
