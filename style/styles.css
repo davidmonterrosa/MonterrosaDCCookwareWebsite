@@ -9,12 +9,20 @@ body {
     text-align: center;
     font-size: 4em;
     font-weight: bold;
+
+    @media (max-width:1200px) {
+        font-size: 1.5em;
+    }
 }
 
 .card-title-style {
     margin-top: 1rem;
     font-size: 2.25em;
     font-weight: 600;
+
+    @media (max-width:1200px) {
+        font-size: 1.25em;
+    }
 }
 
 /* Navbar - Start */
@@ -144,10 +152,25 @@ body {
 /* New Arrivals - End */
 
 /* Best Sellers - Start */
+.best-sellers-container {
+    margin: 0 7%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(419px, 1fr));
+    gap: 5rem;
+}
+
 .best-sellers-card {
+    /* min-width: 420px; */
     border-radius: 10px;
     border: 1px solid #000000;
     padding: 24px;
+}
+
+.best-sellers-image {
+    width: 100%;
+    aspect-ratio: 395 / 310;
+    object-fit: cover;
+    border-radius: 10px;
 }
 
 .shop-now-btn {
@@ -167,15 +190,19 @@ body {
 
 /* Reviews - Start */
 .review-container {
-    /* margin-left: 7%; */
+    margin: 0 7% 7rem;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(411px, 531px));
+    grid-template-columns: repeat(auto-fit, minmax(411px, 1fr));
     gap: 2rem;
+    @media (max-width:1200px) {
+        margin-left: 0;
+    }
 }
 
 .review-card {
-    width: 531px;
-    height: 664.751px;
+    /* width: 531px;
+    height: 664.751px; */
+    aspect-ratio: 531 / 664.751;
     border-radius: 10px;
     color: #FFFFFF;
 }
@@ -245,20 +272,24 @@ body {
 .footer-links {
     display: flex;
     gap: 2rem 6rem;
-    
+
     @media (max-width: 1200px) {
         order: 1;
         flex-wrap: wrap;
     }
 }
 
-.stay-connnected {
+.stay-connected {
     max-width: 410px;
+    margin-right: 1rem;
 
     @media (max-width:1200px) {
         margin-bottom: 2rem;
     }
 }
+
+/* .subscription-text {
+} */
 
 .link-section {
     flex-direction: column;
@@ -283,9 +314,18 @@ body {
 }
 
 .email-form {
-    padding-right: 5rem;
+    margin-right: .3rem;
+    font-size: .75em;
+    vertical-align: middle;
+    color: #B1B5BB;
+    padding-top: .75rem;
+    padding-left: .3rem;
+    padding-right: 8rem;
     background-color: #E5E7EB;
-    margin-bottom: 1rem;
+    @media (max-width:1200px) {
+        padding-right: 7rem;
+        
+    }
 }
 
 .subscribe-btn {
@@ -295,6 +335,10 @@ body {
     width: 9.938rem;
     height: 2.625rem;
     border: 1px solid #FFFFFF;
+}
+
+.icon-margin {
+    margin-bottom: 1rem;
 }
 /* Footer - End */
 
