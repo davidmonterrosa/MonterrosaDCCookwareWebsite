@@ -11,6 +11,7 @@ body {
     font-weight: bold;
 
     @media (max-width:1200px) {
+        margin: 2rem 0 2rem;
         font-size: 1.5em;
     }
 }
@@ -52,13 +53,19 @@ body {
     text-decoration: underline;
 }
 
-.nav-bar-text:hover {
+.nav-text-effect:hover {
     color: #982A1C !important;
     text-decoration: underline;
 }
 
 .bg-nav {
     background-color: #EDEDED;
+}
+
+.me-50p {
+    @media (max-width:991px) {
+        margin-right: 35%;
+    }
 }
 /* Navbar - End */
 
@@ -71,8 +78,9 @@ body {
 .hero-image {
     width: 100%;
     aspect-ratio: 500 / 330;
+    /* margin-top: -100px; */
     @media (max-width: 1200px) {
-        margin-top: 56px;
+        /* margin-top: 56px; */
         object-fit: cover;
         object-position: 38% 100%;
         min-height: 332px;
@@ -144,8 +152,13 @@ body {
 .new-arrivals-container {
     margin: 0 7% 0;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(395px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 2rem;
+
+    @media (max-width:1200px) {
+        margin: 0 4% 0;
+        gap: 3rem;
+    }
 }
 
 .new-arrivals-image {
@@ -173,6 +186,11 @@ body {
     border-radius: 10px;
     border: 1px solid #000000;
     padding: 24px;
+
+    @media (max-width:1200px) {
+        padding: .5rem;
+        margin: 0 .25rem 0;
+    }
 }
 
 .best-sellers-image {
@@ -201,19 +219,24 @@ body {
 .review-container {
     margin: 0 7% 7rem;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(411px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 2rem;
     @media (max-width:1200px) {
-        margin-left: 0;
+        margin: 0 .4rem;
     }
 }
 
 .review-card {
-    /* width: 531px;
-    height: 664.751px; */
+    width: 100%;
     aspect-ratio: 531 / 664.751;
     border-radius: 10px;
     color: #FFFFFF;
+
+    @media (max-width: 1200px) {
+        width: 100%;
+        max-height: 564px;
+        aspect-ratio: 411 /564.02;
+    }
 }
 
 .review-bg-1 {
@@ -236,12 +259,18 @@ body {
 }
 
 .grey-box-overlay {
-    margin: 30% 10% 0;
+    margin: 30% 10%;
     height: 345px;
     background-color: #12121299;
     border-radius: 10px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     padding: 73px 28px;
+
+    @media (max-width: 1200px) {
+        height: fit-content;
+        margin: 29% 5%;
+        padding: 10% 7%;
+    }
 }
 
 .review-card-title {
@@ -251,6 +280,7 @@ body {
 }
 
 .review-text {
+    margin: 1rem 0 .5rem;
     font-size: 1.125em;
     font-weight: 400;
 }
@@ -351,3 +381,10 @@ body {
 }
 /* Footer - End */
 
+@media (max-width: 429.5px) {
+    .card-title-style {
+        margin: 0;
+        text-align: center;
+        font-size: 16px;
+    }
+}
