@@ -136,16 +136,23 @@ body {
     }
 }
 
-/* .start-cooking-cards {
-    width: fit-content;
-} */
+.start-cooking-cards {
+    max-width: 379px;
+    /* max-height: 347px; */
+}
 
 .image-crop {
     width: 100%;
-    /* height: 347px; */
     border-radius: 10px;
     aspect-ratio: 379 / 402;
     object-fit: cover;
+    overflow: hidden;
+}
+
+.image-crop:hover {
+    scale: 1.15;
+    object-fit: cover;
+    object-position: 0% 50%;
 }
 /* Start Cooking - End */
 
@@ -167,6 +174,10 @@ body {
     aspect-ratio: 805 / 632;
     object-fit: cover;  
 }
+
+.new-arrivals-image:hover {
+    filter: brightness(75%);
+}
 /* New Arrivals - End */
 
 /* Best Sellers - Start */
@@ -177,6 +188,7 @@ body {
     gap: 5rem;
 
     @media (max-width:1200px) {
+        grid-template-columns: 1fr;
         margin:0;
         gap: 2rem;       
     }
@@ -201,6 +213,12 @@ body {
     border-radius: 10px;
 }
 
+.best-sellers-image:hover {
+    scale: 1.15;
+    object-fit: cover;
+    object-position: 0% 50%;
+}
+
 .shop-now-btn {
     color: #292828;
     background-color: transparent;
@@ -222,7 +240,7 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 2rem;
-    @media (max-width:1200px) {
+    @media (max-width: 1440px) {
         grid-template-columns: 1fr;
         margin: 0 .4rem;
     }
@@ -235,8 +253,9 @@ body {
     border-radius: 10px;
     color: #FFFFFF;
 
-    @media (max-width: 1200px) {
+    @media (max-width: 768px) {
         width: 100%;
+        height: 564px;
         aspect-ratio: 411 /564.02;
     }
 }
@@ -263,13 +282,13 @@ body {
 .grey-box-overlay {
     margin: 30% 10%;
     /* vertical-align: middle; */
-    min-height: 345px;
+    height: 345px;
     background-color: #12121299;
     border-radius: 10px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     padding: 13% 28px;
 
-    @media (max-width: 1200px) {
+    @media (max-width: 992px) {
         /* vertical-align: middle; */
         height: fit-content;
         margin: 29% 5%;
@@ -316,10 +335,10 @@ body {
 .footer-links {
     display: flex;
     gap: 2rem 6rem;
+    flex-wrap: wrap;
 
     @media (max-width: 1200px) {
         order: 1;
-        flex-wrap: wrap;
     }
 }
 
