@@ -149,7 +149,7 @@ body {
     overflow: hidden;
 }
 
-.image-crop:hover {
+.image-crop:hover img{
     scale: 1.15;
     object-fit: cover;
     object-position: 0% 50%;
@@ -177,6 +177,60 @@ body {
 
 .new-arrivals-image:hover {
     filter: brightness(75%);
+}
+
+
+.btn-styles button{
+    width: 22px;
+    height: 22px;
+    border-radius: 100%;
+    margin-right: .5rem;
+}
+
+.btn-color-red {
+    background-color: #EA2D2C;
+    border: 0;
+}
+
+.btn-color-orange {
+    background-color: #FB5108;
+    border: 0;
+    
+}
+
+.btn-color-yellow {
+    background-color: #D29D12;
+    border: 0;
+    
+}
+
+.btn-color-brown {
+    background-color: #353535;
+    border: 0;
+    
+}
+
+.btn-color-red:hover {
+    outline: 2px solid #000000;
+    outline-offset: 2px;
+}
+
+.btn-color-orange:hover {
+    outline: 2px solid #000000;
+    outline-offset: 2px;    
+    
+}
+
+.btn-color-yellow:hover {
+    outline: 2px solid #000000;
+    outline-offset: 2px;    
+    
+}
+
+.btn-color-brown:hover {
+    outline: 2px solid #000000;
+    outline-offset: 2px;    
+
 }
 /* New Arrivals - End */
 
@@ -363,6 +417,10 @@ body {
     font-weight: 100;
 }
 
+.link-section >p:hover {
+    color: #82EBC5;
+}
+
 .links-title {
     font-size: 1.25em;
     font-weight: 600;
@@ -401,7 +459,10 @@ body {
 }
 
 .icon-margin {
-    margin-bottom: 1rem;
+    display: flex;
+    margin: 1rem 0;
+    gap: 1.5rem;
+    
 }
 /* Footer - End */
 
